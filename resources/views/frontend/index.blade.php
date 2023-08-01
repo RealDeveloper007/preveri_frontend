@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 <!-- Main Page -- Meta Tags -->
 @section('meta_tags')
-<title>Test Preveri Podjetje - Anonimno oceni zaposlitev</title>
+<title>Test- Preveri Podjetje - Anonimno oceni zaposlitev</title>
 <meta name="description" content="Preveri ali oceni delodajalce glede zaposlitve. Popolnoma anonimno in brez registracije !">
 <meta name="keywords" content="preveri podjetje, zaposlitev,  ocena zaposlitve,  mnenje, ocena, anonimna ocena zaposlitve, preveri zaposlitev, delodajalec, zaposleni, delavec, delo, delovno mesto">
 @endsection
