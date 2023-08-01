@@ -19,4 +19,4 @@ jobs:
           server: ftp.preveri-podjetje.si
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          server-dir: /
+          server-dir: /testing.preveri-podjetje.si/
