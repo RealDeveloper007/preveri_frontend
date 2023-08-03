@@ -11,7 +11,7 @@ class ArchivedData extends Model
     //
     protected $casts = [
         'search_key'=>'string',
-        'date'=>'date',
+        'date'=>'string',
     ];
 
        protected $fillable = [

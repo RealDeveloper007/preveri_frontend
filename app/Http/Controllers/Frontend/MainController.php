@@ -450,8 +450,8 @@ class MainController extends Controller
                 $CompanyViewed->company_id          = $CompanyDetails->id;
                 $CompanyViewed->ip_address          = request()->ip();
                 $CompanyViewed->date                = date('Y-m-d');
-                $CompanyViewed->created_at          = date('Y-m-d');
-                $CompanyViewed->updated_at          = date('Y-m-d');
+                $CompanyViewed->created_at          = date('Y-m-d H:i:s');
+                $CompanyViewed->updated_at          = date('Y-m-d H:i:s');
                 $CompanyViewed->save();
             }
             
@@ -1090,9 +1090,11 @@ class MainController extends Controller
     {
         $request->session()->put('title', $request->title);
         
-        $ArchivedData             = new ArchivedData();
-        $ArchivedData->search_key = $request->title;
-        $ArchivedData->date       = date('Y-m-d');
+        $ArchivedData                   = new ArchivedData();
+        $ArchivedData->search_key       = $request->title;
+        $ArchivedData->date             = date('Y-m-d');
+        $ArchivedData->created_at       = date('Y-m-d H:i:s');
+        $ArchivedData->updated_at       = date('Y-m-d H:i:s');
         $ArchivedData->save();
 
         return response()->json([
